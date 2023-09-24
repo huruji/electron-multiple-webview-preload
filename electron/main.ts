@@ -40,7 +40,7 @@ const addViewToWindow = (view: BrowserView) => {
   view.setBounds({
     x: 0,
     y: 100,
-    width: 1200,
+    width: mainWindow.getBounds().width,
     height: 800,
   })
   // view.webContents.openDevTools({ mode: "detach" })

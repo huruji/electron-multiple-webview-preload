@@ -23,6 +23,9 @@ dependencies:
   styled-components:
     specifier: ^6.0.7
     version: 6.0.7(react-dom@18.2.0)(react@18.2.0)
+  use-http:
+    specifier: ^1.0.28
+    version: 1.0.28(react-dom@18.2.0)(react@18.2.0)
   vite-tsconfig-paths:
     specifier: ^4.2.0
     version: 4.2.0(typescript@5.0.2)(vite@4.3.2)
@@ -4382,9 +4385,47 @@ packages:
       punycode: 2.3.0
     dev: true
 
+  /urs@0.0.8(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-LaSSPpr91XrVA3vW2zPupw4K6DSQEDKdL4yQZX1mO2fpljIMpB5zctrjRvxLurelWSgKsHsCmfHNCImscryirQ==}
+    peerDependencies:
+      react: ^16.13.1 || ^17.0.0
+      react-dom: ^16.13.1 || ^17.0.0
+    dependencies:
+      react: 18.2.0
+      react-dom: 18.2.0(react@18.2.0)
+    dev: false
+
+  /use-http@1.0.28(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-MWux13mGDBj+bzuTZJczDIjFu5r7D9eYrrKyKaCo+KFvoGRE9mpNHLK21pAJb2Sbdh/J85y5E4b2xR+IH2WOkg==}
+    peerDependencies:
+      react: ^16.13.1 || ^17.0.0 || ^18.0.0
+      react-dom: ^16.13.1 || ^17.0.0 || ^18.0.0
+    dependencies:
+      react: 18.2.0
+      react-dom: 18.2.0(react@18.2.0)
+      urs: 0.0.8(react-dom@18.2.0)(react@18.2.0)
+      use-ssr: 1.0.25(react-dom@18.2.0)(react@18.2.0)
+      utility-types: 3.10.0
+    dev: false
+
+  /use-ssr@1.0.25(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-VYF8kJKI+X7+U4XgGoUER2BUl0vIr+8OhlIhyldgSGE0KHMoDRXPvWeHUUeUktq7ACEOVLzXGq1+QRxcvtwvyQ==}
+    peerDependencies:
+      react: ^16.13.1 || ^17.0.0 || ^18.0.0
+      react-dom: ^16.13.1 || ^17.0.0 || ^18.0.0
+    dependencies:
+      react: 18.2.0
+      react-dom: 18.2.0(react@18.2.0)
+    dev: false
+
   /utf8-byte-length@1.0.4:
     resolution: {integrity: sha512-4+wkEYLBbWxqTahEsWrhxepcoVOJ+1z5PGIjPZxRkytcdSUaNjIjBM7Xn8E+pdSuV7SzvWovBFA54FO0JSoqhA==}
     dev: true
+
+  /utility-types@3.10.0:
+    resolution: {integrity: sha512-O11mqxmi7wMKCo6HKFt5AhO4BwY3VV68YU07tgxfz8zJTIxr4BpsezN49Ffwy9j3ZpwwJp4fkRwjRzq3uWE6Rg==}
+    engines: {node: '>= 4'}
+    dev: false
 
   /verror@1.10.1:
     resolution: {integrity: sha512-veufcmxri4e3XSrT0xwfUR7kguIkaxBeosDg00yDWhk49wdwkSUrvvsm7nc75e1PUyvIeZj6nS8VQRYz2/S4Xg==}
