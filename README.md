@@ -1,2 +1,7 @@
-# electron-multiple-webview-preload
-electron 多 webview 预渲染容器替换demo
+# electron-react-vite-template
+
+- electron
+- react
+- vite
+- typescript
+- styled-components
