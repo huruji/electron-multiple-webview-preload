@@ -16,12 +16,18 @@ const createHeaderView = () => {
   })
   headerView.webContents.loadFile(path.resolve(__dirname, "../header.html"))
   mainWindow.addBrowserView(headerView)
+  console.log(mainWindow.getContentBounds())
+  headerView.setAutoResize({
+    width: true,
+    height: true
+  })
   headerView.setBounds({
     x: 0,
     y: 0,
-    width: mainWindow.getBounds().width,
-    height: 100,
-  })
+    width: mainWindow.getContentBounds().width,
+    height: 130
+  });
+  headerView.webContents.openDevTools({ mode: "detach" })
 }
 
 const createMainWindow = () => {
@@ -32,6 +38,7 @@ const createMainWindow = () => {
       preload: path.resolve(__dirname, "preload.js"),
     },
     darkTheme: true,
+    // frame: false
   })
 }
 
@@ -42,6 +49,10 @@ const addViewToWindow = (view: BrowserView) => {
     y: 100,
     width: mainWindow.getBounds().width,
     height: 800,
+  })
+  view.setAutoResize({
+    width: true,
+    height: true
   })
   // view.webContents.openDevTools({ mode: "detach" })
 }
